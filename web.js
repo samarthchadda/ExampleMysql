@@ -45,7 +45,7 @@ app.get('/', function(request, response) {
     //     }
     //     response.send(['Hello World!!!! HOLA MUNDO!!!!', rows]);
     // });
-    response.send('Hello World!!!! HOLA MUNDO!!!!');
+    response.json({"message":'Hello World!!!! HOLA MUNDO!!!!'});
 });
 
 var port = process.env.PORT || 5000;
