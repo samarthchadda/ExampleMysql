@@ -37,7 +37,7 @@ function handleDisconnect() {
 
 handleDisconnect();
 
-app.get('/', function(request, response) {
+app.get('/example', function(request, response) {
     // connection.query('SELECT * from t_users', function(err, rows, fields) {
     //     if (err) {
     //         console.log('error: ', err);
@@ -46,6 +46,7 @@ app.get('/', function(request, response) {
     //     response.send(['Hello World!!!! HOLA MUNDO!!!!', rows]);
     // });
     response.json({"message":'Hello World!!!! HOLA MUNDO!!!!'});
+    console.log("hello");
 });
 
 var port = process.env.PORT || 5000;
